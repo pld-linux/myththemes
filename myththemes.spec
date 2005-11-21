@@ -9,7 +9,7 @@ Source0:	http://www.mythtv.org/mc/%{name}-%{version}.tar.bz2
 Requires:	mythtv
 # exclusivearch is just because it's no point of building these on
 # arches which don't have mythtv itself
-ExclusiveArch:	%{ix86} %{x8664} ppc
+ExclusiveArch:	%{ix86} %{x8664} ppc noarch
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
