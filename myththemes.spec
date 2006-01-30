@@ -1,6 +1,6 @@
-%define	_snap 20051221
-%define	_rev 8332
-%define	_rel 0.1
+%define	_snap 20060129
+%define	_rev 8763
+%define	_rel 1
 Summary:	MythTV Themes
 Summary(pl):	Motywy dla MythTV
 Name:		myththemes
@@ -10,7 +10,7 @@ License:	GPL v2
 Group:		Applications
 #Source0:	http://www.mythtv.org/mc/%{name}-%{version}.tar.bz2
 Source0:	%{name}-%{_snap}.%{_rev}.tar.bz2
-# Source0-md5:	7d9c18b4078eaeed06fb2167fde5e361
+# Source0-md5:	e238e25d975a4f0deb83c78dfc4d5256
 BuildRequires:	qmake
 Requires:	mythtv
 BuildArch:	noarch
