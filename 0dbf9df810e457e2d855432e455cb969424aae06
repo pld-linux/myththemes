@@ -1,0 +1,2 @@
+- ExclusiveArch noarch to be able to build with ./builder. Probably not the
+  most appropriate way to do it?
