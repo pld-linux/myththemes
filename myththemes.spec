@@ -1,12 +1,12 @@
 Summary:	MythTV Themes
 Summary(pl):	Motywy dla MythTV
 Name:		myththemes
-Version:	0.19
+Version:	0.20
 Release:	1
 License:	GPL v2
-Group:		Applications
+Group:		Themes
 Source0:	http://www.mythtv.org/mc/%{name}-%{version}.tar.bz2
-# Source0-md5:	f1b4a585be0ef033588783541cb3aa64
+# Source0-md5:	d15536875424579df76a2a296db04b95
 BuildRequires:	qmake
 Requires:	mythtv
 BuildArch:	noarch
@@ -27,6 +27,7 @@ g³ównym pakietem: Iulius, Minimalist-wide, Titivillus, Titivillus-OSD.
 %setup -q %{?_snap:-n %{name}}
 
 %build
+%configure
 qmake myththemes.pro \
 	PREFIX=%{_prefix}
 
@@ -42,10 +43,14 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
+%{_datadir}/mythtv/themes/Gray-OSD
 %{_datadir}/mythtv/themes/Iulius
 %{_datadir}/mythtv/themes/Iulius-OSD
 %{_datadir}/mythtv/themes/Minimalist-wide
 %{_datadir}/mythtv/themes/MythCenter
+%{_datadir}/mythtv/themes/MythCenter-wide
+%{_datadir}/mythtv/themes/Retro
+%{_datadir}/mythtv/themes/Retro-OSD
 %{_datadir}/mythtv/themes/Titivillus
 %{_datadir}/mythtv/themes/Titivillus-OSD
 %{_datadir}/mythtv/themes/isthmus
