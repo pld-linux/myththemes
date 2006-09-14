@@ -8,7 +8,7 @@ Group:		Themes
 Source0:	http://www.mythtv.org/mc/%{name}-%{version}.tar.bz2
 # Source0-md5:	d15536875424579df76a2a296db04b95
 BuildRequires:	qmake
-Requires:	mythtv
+Requires:	mythtv-frontend >= %{version}
 BuildArch:	noarch
 # ExclusiveArch is because it's no point of building these on archidectures which don't have mythtv itself
 ExclusiveArch:	%{ix86} %{x8664} ppc noarch
