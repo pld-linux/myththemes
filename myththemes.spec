@@ -1,5 +1,5 @@
 Summary:	MythTV Themes
-Summary(pl):	Motywy dla MythTV
+Summary(pl.UTF-8):   Motywy dla MythTV
 Name:		myththemes
 Version:	0.20
 Release:	1
@@ -19,9 +19,9 @@ This package provides a number of themes for MythTV that used to be
 distributed in the main download: Iulius, Minimalist-wide, Titivillus,
 Titivillus-OSD.
 
-%description -l pl
-Ten pakiet zawiera motywy dla MythTV, wcze∂niej rozprowadzane wraz z
-g≥Ûwnym pakietem: Iulius, Minimalist-wide, Titivillus, Titivillus-OSD.
+%description -l pl.UTF-8
+Ten pakiet zawiera motywy dla MythTV, wcze≈õniej rozprowadzane wraz z
+g≈Ç√≥wnym pakietem: Iulius, Minimalist-wide, Titivillus, Titivillus-OSD.
 
 %prep
 %setup -q %{?_snap:-n %{name}}
