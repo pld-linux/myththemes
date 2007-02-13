@@ -1,5 +1,5 @@
 Summary:	MythTV Themes
-Summary(pl.UTF-8):   Motywy dla MythTV
+Summary(pl.UTF-8):	Motywy dla MythTV
 Name:		myththemes
 Version:	0.20
 Release:	1
