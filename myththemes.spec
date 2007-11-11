@@ -1,12 +1,12 @@
 Summary:	MythTV Themes
 Summary(pl.UTF-8):	Motywy dla MythTV
 Name:		myththemes
-Version:	0.20
+Version:	0.20.2
 Release:	1
 License:	GPL v2
 Group:		Themes
 Source0:	http://www.mythtv.org/mc/%{name}-%{version}.tar.bz2
-# Source0-md5:	d15536875424579df76a2a296db04b95
+# Source0-md5:	17649c90c1b2983e3b003f5169c83631
 BuildRequires:	qmake
 Requires:	mythtv-frontend >= %{version}
 BuildArch:	noarch
