@@ -1,14 +1,13 @@
-%define snap 20090322
 Summary:	MythTV Themes
 Summary(pl.UTF-8):	Motywy dla MythTV
 Name:		myththemes
-Version:	0.22
-Release:	0.%{snap}.1	
+Version:	0.20.2
+Release:	1
 License:	GPL v2
 Group:		Themes
-Source0:	%{name}-%{version}-%{snap}.tar.bz2
+Source0:	http://www.mythtv.org/mc/%{name}-%{version}.tar.bz2
 # Source0-md5:	17649c90c1b2983e3b003f5169c83631
-BuildRequires:	qt4-qmake
+BuildRequires:	qmake
 Requires:	mythtv-frontend >= %{version}
 BuildArch:	noarch
 # ExclusiveArch is because it's no point of building these on archidectures which don't have mythtv itself
@@ -25,11 +24,11 @@ Ten pakiet zawiera motywy dla MythTV, wcześniej rozprowadzane wraz z
 głównym pakietem: Iulius, Minimalist-wide, Titivillus, Titivillus-OSD.
 
 %prep
-%setup -q %{SOURCE0}
+%setup -q %{?_snap:-n %{name}}
 
 %build
 %configure
-qmake-qt4 myththemes.pro \
+qmake myththemes.pro \
 	PREFIX=%{_prefix}
 
 %install
