@@ -3,7 +3,7 @@ Summary:	MythTV Themes
 Summary(pl.UTF-8):	Motywy dla MythTV
 Name:		myththemes
 Version:	0.22
-Release:	0.%{snap}.1	
+Release:	0.%{snap}.2
 License:	GPL v2
 Group:		Themes
 Source0:	%{name}-%{version}-%{snap}.tar.bz2
