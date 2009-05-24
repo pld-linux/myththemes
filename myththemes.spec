@@ -9,6 +9,7 @@ Group:		Themes
 Source0:	%{name}-%{version}-%{snap}.tar.bz2
 # Source0-md5:	7f5f02ac3d9d6bc88287dc4d2ce93006
 BuildRequires:	qt4-qmake
+BuildRequires:	libmyth-devel >= 0.22
 Requires:	mythtv-frontend >= %{version}
 BuildArch:	noarch
 # ExclusiveArch is because it's no point of building these on archidectures which don't have mythtv itself
