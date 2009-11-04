@@ -54,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/mythtv/themes/Retro-OSD
 %{_datadir}/mythtv/themes/Titivillus-OSD
 %{_datadir}/mythtv/themes/blueosd
-{_datadir}/mythtv/themes/blootube-osd
+%{_datadir}/mythtv/themes/blootube-osd
 %{_datadir}/mythtv/themes/metallurgy
