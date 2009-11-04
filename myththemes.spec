@@ -7,7 +7,7 @@ Release:	0.%{snap}.1
 License:	GPL v2
 Group:		Themes
 Source0:	ftp://ftp.osuosl.org/pub/mythtv/%{name}-%{version}%{snap}.tar.bz2
-# Source0-md5:	bb6773c2e24979c718f6ec6a7b551eaf
+# Source0-md5:	7d629aa8c0f1c8cdc11310b09a929626
 BuildRequires:	libmyth-devel >= 0.22
 BuildRequires:	qt4-qmake
 Requires:	mythtv-frontend >= %{version}
