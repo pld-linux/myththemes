@@ -3,7 +3,7 @@ Summary:	MythTV Themes
 Summary(pl.UTF-8):	Motywy dla MythTV
 Name:		myththemes
 Version:	0.22
-Release:	0.%{snap}.1
+Release:	0.%{snap}.2
 License:	GPL v2
 Group:		Themes
 Source0:	ftp://ftp.osuosl.org/pub/mythtv/%{name}-%{version}%{snap}.tar.bz2
@@ -50,7 +50,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/mythtv/themes/Iulius-OSD
 %{_datadir}/mythtv/themes/Mono-OSD
 %{_datadir}/mythtv/themes/Mythbuntu
+%{_datadir}/mythtv/themes/ProjectGrayhem-OSD
 %{_datadir}/mythtv/themes/Retro-OSD
 %{_datadir}/mythtv/themes/Titivillus-OSD
 %{_datadir}/mythtv/themes/blueosd
+{_datadir}/mythtv/themes/blootube-osd
 %{_datadir}/mythtv/themes/metallurgy
