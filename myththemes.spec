@@ -1,12 +1,16 @@
+
+#%define fix 24635
+
 Summary:	MythTV Themes
 Summary(pl.UTF-8):	Motywy dla MythTV
 Name:		myththemes
-Version:	0.22
-Release:	1
+Version:	0.23
+#Release:        fix%{fix}.1
+Release:	0.1
 License:	GPL v2
 Group:		Themes
-Source0:	ftp://ftp.osuosl.org/pub/mythtv/%{name}-%{version}.tar.bz2
-# Source0-md5:	a5f00f152fb430a20c70aaa3bf456347
+Source0:        ftp://ftp.osuosl.org/pub/mythtv/%{name}-%{version}.tar.bz2
+# Source0-md5:	1837ac72f7a03cb780d070cbea549bfe
 BuildRequires:	libmyth-devel >= 0.22
 BuildRequires:	qt4-qmake
 Requires:	mythtv-frontend >= %{version}
@@ -25,7 +29,7 @@ Ten pakiet zawiera motywy dla MythTV, wcześniej rozprowadzane wraz z
 głównym pakietem: Iulius, Minimalist-wide, Titivillus, Titivillus-OSD.
 
 %prep
-%setup -q %{SOURCE0}
+%setup -q -n %{name}-%{version}
 
 %build
 %configure
@@ -44,6 +48,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
+%{_datadir}/mythtv/themes/Arclight
+%{_datadir}/mythtv/themes/Childish
 %{_datadir}/mythtv/themes/Graphite
 %{_datadir}/mythtv/themes/Iulius-OSD
 %{_datadir}/mythtv/themes/Mono-OSD
