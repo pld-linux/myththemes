@@ -9,10 +9,12 @@ Version:	0.23
 Release:	0.1
 License:	GPL v2
 Group:		Themes
-Source0:        ftp://ftp.osuosl.org/pub/mythtv/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.osuosl.org/pub/mythtv/%{name}-%{version}.tar.bz2
 # Source0-md5:	1837ac72f7a03cb780d070cbea549bfe
 BuildRequires:	libmyth-devel >= 0.22
+BuildRequires:	libstdc++-devel
 BuildRequires:	qt4-qmake
+BuildRequires:	which
 Requires:	mythtv-frontend >= %{version}
 BuildArch:	noarch
 # ExclusiveArch is because it's no point of building these on archidectures which don't have mythtv itself
@@ -29,7 +31,7 @@ Ten pakiet zawiera motywy dla MythTV, wcześniej rozprowadzane wraz z
 głównym pakietem: Iulius, Minimalist-wide, Titivillus, Titivillus-OSD.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
 %configure
