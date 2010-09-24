@@ -4,13 +4,13 @@
 Summary:	MythTV Themes
 Summary(pl.UTF-8):	Motywy dla MythTV
 Name:		myththemes
-Version:	0.23
+Version:	0.23.1
 #Release:        fix%{fix}.1
 Release:	1
 License:	GPL v2
 Group:		Themes
 Source0:	ftp://ftp.osuosl.org/pub/mythtv/%{name}-%{version}.tar.bz2
-# Source0-md5:	1837ac72f7a03cb780d070cbea549bfe
+# Source0-md5:	7dc2588a3235f84a957909449a8bda88
 BuildRequires:	libmyth-devel >= 0.22
 BuildRequires:	libstdc++-devel
 BuildRequires:	qt4-qmake
